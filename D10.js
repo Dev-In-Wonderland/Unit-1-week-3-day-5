@@ -187,10 +187,55 @@ console.log("---------------Eserc-7-----------------")
 // console.log(formatDate())
 
 
+// switch (key) {
+//   case value:
+    
+//     break;
+
+//   default:
+//     break;
+// }
+
+let dataOggi = new Date()
+
+let giornodellaSettimana = dataOggi.getDay()
+
+function whatDayIsIt(day) {
+  
 
 
 
+switch (day) {
+  case 0:
+    console.log("It's Sunday!")
+    break;
+  case 1:
+     console.log("It's Monday!")
+    
+    break;
+  case 2:
+    console.log("It's Tuesday!")
+    
+    break;
+  case 3:
+    console.log("It's Wednesday!")
+    break;
+  case 4:
+    console.log("It's Thursday!")
+    break;
+  case 5:
+    console.log("It's Friday!")
+    break;
+  case 6:
+    console.log("It's Saturday!")
+    break;
 
+}
+
+
+}
+
+whatDayIsIt(giornodellaSettimana)
 
 /* ESERCIZIO 8
   Scrivi una funzione chiamata "rollTheDices" che riceve un numero come parametro.
@@ -221,7 +266,7 @@ let sumDice = 0
  sumDice =+ rollDice6() * numerolanci
  rollDice6()
 
- console.log("Questa è la somma casuale rispetto al numero di lanci", sumDice)
+ console.log("Questa è la somma casuale rispetto al numero di lanci effettuati: ", sumDice)
 
 }
 
@@ -244,6 +289,16 @@ console.log("---------------Eserc-9-----------------")
 
 
 
+const howManyDays = function(selectedDate) {
+  let today = Date.now()
+  let selectedInMilliseconds = Date.parse(selectedDate)
+  return Math.floor((today - selectedInMilliseconds) / (1000 * 60 * 60 * 24))
+
+}
+
+let date = howManyDays('16 Oct 1997')
+
+console.log("Dalla data sono trascorsi", date, "giorni")
 
 /* ESERCIZIO 10
   Scrivi una funzione chiamata "isTodayMyBirthday" che deve ritornare true se oggi è il tuo compleanno, falso negli altri casi.
@@ -254,6 +309,36 @@ console.log("---------------Eserc-9-----------------")
 // NOTA: l'array "movies" usato in alcuni esercizi è definito alla fine di questo file
 console.log("---------------Eserc-10-----------------")
 
+
+
+let currentDate = new Date()
+
+let day = currentDate.getDate()
+
+let month = currentDate.getMonth() + 1
+
+let dayandmonth = day + "/" + month
+
+let dayandmonthstring = dayandmonth.toString()
+
+console.log("Oggi è il ", dayandmonthstring)
+
+let isTodayMyBirthday = (date) => {
+
+  if (date === "16/10") {
+
+    console.log(true, ": oggi è il mio compleanno!")
+
+    
+  }else{
+
+    console.log(false, ": oggi non è il mio compleanno")
+  }
+}
+
+
+
+isTodayMyBirthday(dayandmonthstring)
 
 
 
@@ -289,45 +374,69 @@ console.log("---------------Eserc-16-----------------")
   Scrivi una funzione chiamata "searchByTitle" che riceve una stringa come parametro e ritorna i film nell'array "movies" fornito che la contengono nel titolo.
 */
 console.log("---------------Eserc-17-----------------")
+
+function searchByTitle () {
+
+}
+
+
+
+
+
 /* ESERCIZIO 18
   Scrivi una funzione chiamata "searchAndDivide" che riceve una stringa come parametro e ritorna un oggetto contenente due array: "match" e "unmatch".
   "match" deve includere tutti i film dell'array "movies" fornito che contengono la stringa fornita all'interno del proprio titolo, mentre "unmatch" deve includere tutti i rimanenti.
 */
 
-
-
-
-
-const match
-searchAndDivide(stringa){
-  return array
-
-}
-
-
 console.log("---------------Eserc-18-----------------")
+
+
+
+// const searchAndDivide (stringa, array) {
+//   return array[stringa]
+
+// }
+
+
+
 /* ESERCIZIO 19
   Scrivi una funzione chiamata "removeIndex" che riceve un numero come parametro e ritorna l'array "movies" fornito privo dell'elemento nella posizione ricevuta come parametro.
 */
 console.log("---------------Eserc-19-----------------")
 // DOM (nota: gli elementi che selezionerai non si trovano realmente nella pagina)
 
+// function removeIndex (index) {
+
+//   delete 
+
+
+// }
+
+
+
+
+
+
+
 /* ESERCIZIO 20
   Scrivi una funzione per selezionare l'elemento dotato di id "container" all'interno della pagina.
 */
 
-function container (){
+
+// const container = document.querySelectorAll("#container")
+
+// function container (){
 
 
 
-document.innerHTML += `
-        <div id="container">
+// document.innerHTML += `
+//         <div id="container">
          
          
-         </div>
+//          </div>
          
-         `
-        }
+//          `
+//         }
 
 
 console.log("---------------Eserc-20-----------------")
@@ -335,11 +444,20 @@ console.log("---------------Eserc-20-----------------")
   Scrivi una funzione per selezionare ogni tag <td> all'interno della pagina.
 
 */
-document.querySelectorAll("td")
+
+// const td = document.querySelectorAll("td")
+
+// function(params) {
+  
+// }
 
 
 
+// let el = document.getElementsByTagName( "td" );
 
+// for( let i = 0; i < el.length; i++ ){
+//   console.log( el[i].innerHTML );
+// }
 
 
 
@@ -356,13 +474,13 @@ console.log("---------------Eserc-22-----------------")
 
 
 
-const generateTable = function () {
+// const generateTable = function () {
 
-  const container = document.getElementById("tableArea")
-  const table = document.createElement("table")
-  table.style.width = "100%"
+//   const container = document.getElementById("tableArea")
+//   const table = document.createElement("table")
+//   table.style.width = "100%"
 
-  const firstRow = document.createElement("tr")
+//   const firstRow = document.createElement("tr")
 
   
   // const thProduct = document.createElement("th")
@@ -380,29 +498,29 @@ const generateTable = function () {
   // table.appendChild(firstRow)
 
 
-  for (let i = 0; i < images.length; i++) {
-    const newRow = document.createElement("tr")
+//   for (let i = 0; i < images.length; i++) {
+//     const newRow = document.createElement("tr")
 
     
-    const tdProduct = document.createElement("td")
-    tdProduct.innerText = "Questo è un td"
-    const tdQuantity = document.createElement("td")
-    tdQuantity.innerText = Math.floor(Math.random() * 50)
-    const tdPrice = document.createElement("td")
-    tdPrice.innerText = Math.floor(Math.random() * 500) + "€"
+//     const tdProduct = document.createElement("td")
+//     tdProduct.innerText = "Questo è un td"
+//     const tdQuantity = document.createElement("td")
+//     tdQuantity.innerText = Math.floor(Math.random() * 50)
+//     const tdPrice = document.createElement("td")
+//     tdPrice.innerText = Math.floor(Math.random() * 500) + "€"
 
     
-    newRow.appendChild(tdProduct)
-    newRow.appendChild(tdQuantity)
-    newRow.appendChild(tdPrice)
-    table.appendChild(newRow)
-  }
+//     newRow.appendChild(tdProduct)
+//     newRow.appendChild(tdQuantity)
+//     newRow.appendChild(tdPrice)
+//     table.appendChild(newRow)
+//   }
 
 
-  container.appendChild(table)
-}
+//   container.appendChild(table)
+// }
 
-generateTable()
+// generateTable()
 /* ESERCIZIO 23
   Scrivi una funzione per aggiungere un background di colore rosso a ogni link all'interno della pagina.
 */
@@ -410,13 +528,13 @@ console.log("---------------Eserc-23-----------------")
 
 
 
-const backgroundRed = function () {
-  const red = document.querySelectorAll("a")
-  red.forEach(link => link.style.backgroundColor = "red")
+// const backgroundRed = function () {
+//   const red = document.querySelectorAll("a")
+//   red.forEach(link => link.style.backgroundColor = "red")
 
-}
+// }
 
-backgroundRed()
+// backgroundRed()
 
 /* ESERCIZIO 24
   Scrivi una funzione per aggiungere un nuovo elemento alla lista non ordinata con id "myList".
@@ -427,10 +545,10 @@ console.log("---------------Eserc-24-----------------")
 
 
 
-let node = document.createElement('li');
-node.appendChild(document.createTextNode('Scooter'));
+// let node = document.createElement('li');
+// node.appendChild(document.createTextNode('Scooter'));
  
-document.querySelector('#myList ul li').appendChild(node);
+// document.querySelector('#myList ul li').appendChild(node);
 
 
 
@@ -442,8 +560,8 @@ console.log("---------------Eserc-25-----------------")
 
 
 
-const remove = document.querySelector('#myList ul li')
-remove.remove()
+// const remove = document.querySelector('#myList ul li')
+// remove.remove()
 
 
 /* ESERCIZIO 26
@@ -452,6 +570,15 @@ remove.remove()
 console.log("---------------Eserc-26-----------------")
 
 
+
+
+// const addTest = function () {
+//   const trs = document.querySelectorAll('tr')
+//   for (let i = 0; i < trs.length; i++) {
+//     uls[i].classList.add('test')
+//   }
+//  }
+// addList()
 
 
 
