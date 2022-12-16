@@ -350,6 +350,40 @@ isTodayMyBirthday(dayandmonthstring)
   in esso la proprietà chiamata come la stringa passata come secondo parametro.
 */
 console.log("---------------Eserc-11-----------------")
+
+
+let object = {
+name: 'Tommaso',
+surname: 'Nannicini',
+
+}
+object.age = '25'
+let age = object.age
+
+// delete object.age
+
+// console.log(object)
+
+// let object = {
+//   name: 'Tommaso',
+// surname: 'Nannicini',
+// 'age': '25'
+// }
+
+// let age
+// let oggetto1
+function deleteProp(oggetto, stringa) {
+ const delete1 = delete stringa
+console.log(delete1)
+  
+  
+}
+
+deleteProp(object, age)
+console.log("Ecco l'oggetto senza la proprietà dopo che è passato nella funzione: ", object)
+
+
+
 /* ESERCIZIO 12
   Scrivi una funzione chiamata "newestMovie" che trova il film più recente nell'array "movies" fornito.
 */
