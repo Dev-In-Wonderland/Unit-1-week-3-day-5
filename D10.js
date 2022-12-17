@@ -814,7 +814,7 @@ console.log("(La risposta è commentata)---------------Eserc-26-----------------
 // const addTest = function () {
 //   const trs = document.querySelectorAll('tr')
 //   for (let i = 0; i < trs.length; i++) {
-//     uls[i].classList.add('test')
+//     trs[i].classList.add('test')
 //   }
 //  }
 // addList()
