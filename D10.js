@@ -733,7 +733,7 @@ console.log("---------------Eserc-21-----------------")
 /* ESERCIZIO 22
   Scrivi una funzione che, tramite un ciclo, stampa in console il testo contenuto in ogni tag <td> all'interno della pagina.
 */
-console.log("---------------Eserc-22-----------------")
+console.log("(La risposta è commentata)---------------Eserc-22-----------------")
 
 // I td sono in un' ipotetica pagina HTML
 
@@ -758,7 +758,7 @@ console.log("---------------Eserc-22-----------------")
 /* ESERCIZIO 23
   Scrivi una funzione per aggiungere un background di colore rosso a ogni link all'interno della pagina.
 */
-console.log("---------------Eserc-23-----------------")
+console.log("(La risposta è commentata)---------------Eserc-23-----------------")
 
 
 
@@ -773,16 +773,18 @@ console.log("---------------Eserc-23-----------------")
 /* ESERCIZIO 24
   Scrivi una funzione per aggiungere un nuovo elemento alla lista non ordinata con id "myList".
 */
-console.log("---------------Eserc-24-----------------")
+console.log("(La risposta è commentata)---------------Eserc-24-----------------")
 
 
 
+// const nodeFunction = function () {
+//   const node = document.createElement('li')
+//   document.querySelector('#myList ul li').appendChild(node);
 
+// }
 
-// let node = document.createElement('li');
-// node.appendChild(document.createTextNode('Scooter'));
- 
-// document.querySelector('#myList ul li').appendChild(node);
+// nodeFunction()
+
 
 
 
@@ -790,18 +792,21 @@ console.log("---------------Eserc-24-----------------")
 /* ESERCIZIO 25
   Scrivi una funzione per svuotare la lista non ordinata con id "myList".
 */
-console.log("---------------Eserc-25-----------------")
+console.log("(La risposta è commentata)---------------Eserc-25-----------------")
 
 
 
-// const remove = document.querySelector('#myList ul li')
-// remove.remove()
+// const removeList = function(){
+// const removeLi = document.querySelector('#myList ul li')
+// remove.forEach(list => list.value = null)
+// }
+// removeList()
 
 
 /* ESERCIZIO 26
   Scrivi una funzione per aggiungere ad ogni tag <tr> la classe CSS "test"
 */
-console.log("---------------Eserc-26-----------------")
+console.log("(La risposta è commentata)---------------Eserc-26-----------------")
 
 
 
